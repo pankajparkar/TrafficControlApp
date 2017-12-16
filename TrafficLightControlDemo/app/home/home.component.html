@@ -1,0 +1,36 @@
+﻿<!--<div class="row">
+    <div class="col-sm-6">
+        <div ng-repeat="item in home.items" class="col-sm-6 road" ng-style="{'transform': 'rotate('+item.Transform+'deg)'}">
+            <div class="foot-path"></div>
+            <div class="signal">
+                <button class="btn btn-success" ng-class="{active: item.active}">&nbsp;&nbsp;</button>
+                <button class="btn btn-danger" ng-class="{active: !item.active}">&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--<div class="row">
+    <div ng-repeat="item in home.items" class="road" ng-style="{'transform': 'rotate('+item.Transform+'deg)'}">
+        <div class="foot-path"></div>
+        <div class="signal">
+            <button class="btn btn-success" ng-class="{active: item.active}">&nbsp;&nbsp;</button>
+            <button class="btn btn-danger" ng-class="{active: !item.active}">&nbsp;&nbsp;</button>
+        </div>
+    </div>
+</div>-->
+
+<div ng-repeat="item in home.items" class="road" ng-style="{'transform': 'rotate('+item.Transform+'deg)'}">
+    <div class="foot-path"></div>
+    <center>
+        <i class="glyphicon medium-font" 
+           ng-class="{
+            'glyphicon-arrow-right green-color': item.active, 
+            'glyphicon-remove red-color': !item.active
+          }">
+        </i>
+    </center>
+    <div class="signal">
+        <span class="badge green" ng-class="{active: item.active}">&nbsp;</span>
+        <span class="badge red" ng-class="{active: !item.active}">&nbsp;</span>
+    </div>
+</div>

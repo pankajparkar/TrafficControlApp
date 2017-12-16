@@ -1,0 +1,27 @@
+﻿<div class="container">
+    <div class="row text-center">
+        <h2>Road Signals</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+            <form name="signalSetting.settingForm" ng-submit="signalSetting.save(signalSetting.settingForm)">
+                <div class="form-group">
+                    <label for="default-interval">Default Interval</label>
+                    <input type="text" class="form-control" name="default-interval"
+                           ng-model="signalSetting.settings.DefaultInterval" id="default-interval" placeholder="Default Interval" required>
+                </div>
+                <div class="form-group">
+                    <label for="start-time">Start Time</label>
+                    <input type="datetime" class="form-control" name="start-time" disabled
+                           ng-model="signalSetting.settings.StartTime" id="start-time" placeholder="Start Time">
+                </div>
+                <div class="form-group">
+                    <label for="end-time">End Time</label>
+                    <input type="datetime" class="form-control" name="end-time" id="end-time" disabled
+                           ng-model="signalSetting.settings.EndTime" placeholder="End Time" required>
+                </div>
+                <button type="submit" class="btn btn-primary col-xs-12">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

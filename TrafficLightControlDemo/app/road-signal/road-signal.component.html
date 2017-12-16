@@ -1,0 +1,29 @@
+﻿<div class="container">
+    <div class="row">
+        <h2>Signal Settings</h2>
+    </div>
+    <div class="row">
+        <table class="table table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th>Edit</th>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Transform (rotate)</th>
+                    <th>Interval</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="signal in roadSignal.list">
+                    <td>
+                        <a href="" ng-click="roadSignal.openModal(signal)">Edit</a>
+                    </td>
+                    <td>{{signal.Number}}</td>
+                    <td>{{signal.Name}}</td>
+                    <td>{{signal.Transform + 'deg'}}</td>
+                    <td>{{signal.Interval}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
